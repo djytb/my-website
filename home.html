@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukas Beyer</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #000000, #ffffff); /* Hintergrundverlauf von Weiß zu Grau */
+            text-align: center;
+            margin: 0; /* Standardmäßigen Außenabstand entfernen */
+            padding: 0; /* Standardmäßigen Innenabstand entfernen */
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif /* Font für h1 */
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Höhe auf die Bildschirmhöhe einstellen */
+        }
+        .image-link {
+            margin: 10px;
+            position: relative;
+            width: 200px; /* Bildbreite festlegen */
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+        }
+        .hover-text {
+            display: none;
+            position: absolute;
+            width: 200px; /* Breite des Hover-Textes anpassen */
+            height: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 0, 0);
+            padding: 25px;
+            border-radius: 0px;
+            font-size: smaller;
+            pointer-events: none; /* Verhindern, dass der Hover-Text mit Klicks interagiert */
+            box-sizing: border-box; /* Padding in die Breite einbeziehen */
+        }
+        .top-hover-text {
+            top: 0%; /* Position im oberen Bereich der oberen Hälfte */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bottom-hover-text {
+            top: 50%; /* Position im oberen Bereich der unteren Hälfte */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .top-half:hover ~ .top-hover-text,
+        .bottom-half:hover ~ .bottom-hover-text {
+            display: block;
+        }
+        .image-link .top-half,
+        .image-link .bottom-half {
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            left: 0;
+        }
+        .image-link .top-half {
+            top: 0;
+        }
+        .image-link .bottom-half {
+            bottom: 0;
+        }
+
+        .black-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            animation: fadeOut 20s forwards;
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <div class="image-container">
+        <div class="image-link">
+            <div class="black-box"></div>
+            <img src="image-i.u.jpeg" alt="Image 2">
+            <a class="top-half" href="https://soundcloud.com/inunisonlabel/sets/djytb-hitch-a-ride-to-the-end-of-the-highway-where-the-neons-turn-to-wood" target="_blank"></a>
+            <a class="bottom-half" href="subpage1.html" target="_parent"></a>
+            <div class="hover-text top-hover-text">listen to "hitch a ride to the end of the highway where the neons turn to wood" on SoundCloud</div>
+            <div class="hover-text bottom-hover-text">see more</div>
+        </div>
+
+        <div class="image-link">
+            <div class="black-box"></div>
+            <img src="image-6tracks.jpeg" alt="Image 3">
+            <a class="top-half" href="https://soundcloud.com/djytb/sets/6tracks" target="_blank"></a>
+            <a class="bottom-half" href="subpage2.html" target="_parent"></a>
+            <div class="hover-text top-hover-text">listen to "6 Tracks" on SoundCloud</div>
+            <div class="hover-text bottom-hover-text">see more</div>
+        </div> 
+
+        <div class="image-link">
+            <div class="black-box"></div>
+            <img src="fettenbass1.JPG" alt="Image 5">
+            <a class="top-half" href="https://youtu.be/Gl5I9WBvZo8?si=VElgce5ycIgtral_" target="_blank"></a>
+            <a class="bottom-half" href="subpage3.html" target="_blank"></a>
+            <div class="hover-text top-hover-text">listen to "Fetten Bass Megamix" on YouTube</div>
+            <div class="hover-text bottom-hover-text">see more</div>
+        </div>
+
+        <div class="image-link">
+            <div class="black-box"></div>
+            <img src="Kallax2.jpg" alt="Image 4">
+            <a class="top-half" href="kallax-text.pdf" target="_blank"></a>
+            <a class="bottom-half" href="subpage4.html" target="_blank"></a>
+            <div class="hover-text top-hover-text">open "KALLAX SOUNDSYSTEM" publication</div>
+            <div class="hover-text bottom-hover-text">see more</div>
+        </div>
+
+        <div class="image-link">
+            <div class="black-box"></div>
+            <img src="_MG_0028.jpg" alt="Image 4">
+            <a class="top-half" href="https://youtu.be/izvjVQZTfhg" target="_blank"></a>
+            <a class="bottom-half" href="subpage5.html" target="_blank"></a>
+            <div class="hover-text top-hover-text">listen to "ohne_titel_djyoutube_1080p" on youtube</div>
+            <div class="hover-text bottom-hover-text">see more ("mute" group exhibition)</div>
+        </div>
+
+        <div class="image-link">
+            <div class="black-box"></div>
+            <img src="image-portfolio.jpg" alt="Image 5">
+            <a class="top-half" href="Portfolio-text.pdf" target="_blank"></a>
+            <a class="bottom-half" href="subpage.html" target="_blank"></a>
+            <div class="hover-text top-hover-text">open "Lukas Beyer - Portfolio"</div>
+            <div class="hover-text bottom-hover-text">see more</div>
+        </div>
+    </div>
+</body>
+</html>

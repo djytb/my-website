@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukas Beyer</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffffff, #999999); /* Background gradient from white to gray */
+            text-align: center;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Set height to viewport height */
+        }
+        .image-link {
+            margin: 10px;
+            position: relative;
+            width: 200px; /* Match the image width */
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+        }
+        .hover-text {
+            display: none;
+            position: absolute;
+            width: 200px; /* Match the image width */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: smaller;
+            pointer-events: none; /* Ensure hover text does not interfere with click */
+            box-sizing: border-box; /* Include padding in the width */
+        }
+        .top-hover-text {
+            top: 15%; /* Position in the upper part of the top half */
+        }
+        .bottom-hover-text {
+            top: 65%; /* Position in the upper part of the bottom half */
+        }
+        .image-link:hover .hover-text {
+            display: block;
+        }
+        .image-link .top-half,
+        .image-link .bottom-half {
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            left: 0;
+        }
+        .image-link .top-half {
+            top: 0;
+        }
+        .image-link .bottom-half {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>2020-2023</h1>
+    <div class="image-container">
+        <div class="image-link">
+            <img src="image-i.u.jpeg" alt="Image 2">
+            <div class="hover-text top-hover-text">listen to "hitch a ride to the end of the highway where the neons turn to wood" on SoundCloud</div>
+            <div class="hover-text bottom-hover-text">see more</div>
+            <a class="top-half" href="https://soundcloud.com/inunisonlabel/sets/djytb-hitch-a-ride-to-the-end-of-the-highway-where-the-neons-turn-to-wood" target="_blank"></a>
+            <a class="bottom-half" href="subpage1.html" target="_parent"></a>
+        </div>
+
+        <!-- Add other image links here -->
+
+        <div class="image-link">
+            <img src="image-6tracks.jpeg" alt="Image 3">
+            <div class="hover-text top-hover-text">listen to "6 Tracks" on SoundCloud</div>
+            <div class="hover-text bottom-hover-text">see more</div>
+            <a class="top-half" href="https://soundcloud.com/djytb/sets/6tracks" target="_blank"></a>
+            <a class="bottom-half" href="subpage2.html" target="_parent"></a>
+        </div> 
+
+        <div class="image-link">
+            <img src="fettenbass1.JPG" alt="Image 5">
+            <div class="hover-text top-hover-text">listen to "Fetten Bass Megamix" on YouTube</div>
+            <div class="hover-text bottom-hover-text">see more</div>
+            <a class="top-half" href="https://youtu.be/Gl5I9WBvZo8?si=VElgce5ycIgtral_" target="_blank"></a>
+            <a class="bottom-half" href="subpage3.html" target="_blank"></a>
+        </div>
+
+        <div class="image-link">
+            <img src="image-kallax.JPG" alt="Image 4">
+            <div class="hover-text top-hover-text">open "KALLAX SOUNDSYSTEM" publication</div>
+            <div class="hover-text bottom-hover-text">see more</div>
+            <a class="top-half" href="kallax-text.pdf" target="_blank"></a>
+            <a class="bottom

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subpage Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #ff0000; /* Setting background color */
+            text-align: left; /* Aligning content to center */
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .audio-player,
+        .video-player1,
+        .video-player2,
+        .images {
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto; /* Centering images horizontally */
+        }
+        .video-player1 video {
+            width: 60%; /* Making the video player width 100% */
+            max-width: 800px; /* Limiting max width of video player */
+            height: auto; /* Allowing height to adjust proportionally */
+        }
+        .video-player2 video {
+            width: 20%; /* Making the video player width 100% */
+            max-width: 800px; /* Limiting max width of video player */
+            height: auto; /* Allowing height to adjust proportionally */
+        }
+        @media (max-width: 240px) {
+            /* Adjusting video size for small screens (e.g., phones) */
+            .video-player video {
+                max-width: 100%; /* Full width for small screens */
+            }
+        }
+        .back-button {
+            position: fixed; /* Position the button */
+            top: 20px; /* Distance from top */
+            right: 20px; /* Distance from right */
+            z-index: 999; /* Ensure it's above other content */
+        }
+        .image-link {
+            position: relative;
+            display: inline-block;
+            text-align: right; /* Ensure the text is aligned to the right */
+            width: 60%; /* Ensure the width matches the image width */
+        }
+        .hover-text {
+            display: none;
+            position: relative;
+            right: -5%; /* Position the text to the right of the image */
+            top: 4%; /* Align with the top edge of the image */
+            color: black; /* Set text color to black */
+            font-size: xx-small; /* Set smaller font size */
+            white-space: nowrap;
+        }
+        .image-link:hover .hover-text {
+            display: block;
+        }
+        p {
+            font-size: x-small;
+        }
+        h2 {
+            font-size: x-small;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>6Tracks 4Free</h1>
+        <p>This EP was released in 2020 to serve as soundtrack to an installation at Bergstaffel, Stuttgart. Visitors were able to listen on their mobile device by scanning the QR-Code on the Cover. </p>
+
+        <div class="audio-player">
+            <h2></h2>
+            <audio controls>
+                <source src="TR001.aif" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+
+        <div class="video-player2">
+            <h2></h2>
+            <video controls autoplay>
+                <source src="photoclickstar_2020.mp4" type="video/mp4" width="640" height="360">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-player1">
+            <h2></h2>
+            <video controls>
+                <source src="6Tracks-TR002.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="images">
+            <h2></h2>
+            <div class="image-link">
+                <img src="image-6tracks.jpeg" alt="Description of Image 1">
+                <div class="hover-text">"6Tracks 4Free", 2021</div>
+            </div>
+
+
+            <div class="image-link">
+                <img src="keys.png" alt="Description of Image 3">
+                <div class="hover-text">Pocketknifes, 2020</div>
+            </div>
+
+            <div class="image-link">
+                <img src="IMG_9936.HEIC" alt="Description of Image 2">
+                <div class="hover-text">A weapon, a mirror, 2021</div>
+            </div>
+
+            <div class="image-link">
+                <img src="starsssss.jpg" alt="Description of Image 3">
+                <div class="hover-text">A weapon, a mirror. Installation view, 2021</div>
+            </div>
+
+            <div class="image-link">
+                <img src="kommode2.png" alt="Description of Image 3">
+                <div class="hover-text">Pocketknifes, Installation view, 2021</div>
+            </div>
+    </div>
+
+    <!-- Button to return to the main page -->
+    <div class="back-button">
+        <button onclick="window.location.href = 'home.html';">Back to Main Page</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Artworks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="artwork" onclick="openArtwork('art1')">
+            <img src="image-kallax.jpg" alt="Artwork 1">
+        </div>
+        <div class="artwork" onclick="openArtwork('art2')">
+            <img src="image-6tracks.jpg" alt="Artwork 2">
+        </div>
+        <div class="artwork" onclick="openArtwork('art2')">
+            <img src="image-i.u.jpg" alt="Artwork 2">
+        </div>
+        <!-- Add more artworks here -->
+    </div>
+
+    <div id="art1" class="artwork-modal">
+        <div class="artwork-content">
+            <span class="close" onclick="closeArtwork('art1')">&times;</span>
+            <h2>KALLAX SOUNDSYSTEM</h2>
+            <p>an Ikea shelf turned into a Soundsystem.</p>
+            <!-- Add more content about Artwork 1 here -->
+        </div>
+    </div>
+
+    <div id="art2" class="artwork-modal">
+        <div class="artwork-content">
+            <span class="close" onclick="closeArtwork('art2')">&times;</span>
+            <h2>Artwork 2 Title</h2>
+            <p>Description of Artwork 2.</p>
+            <!-- Add more content about Artwork 2 here -->
+        </div>
+    </div>
+
+    <!-- Add more modals for each artwork here -->
+
+    <script src="scripts.js"></script>
+</body>
+</html>

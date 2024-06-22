@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subpage Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 20px;
+            position: relative; /* Add position relative to body */
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 40px; /* Add padding top to accommodate the fixed button */
+        }
+        h1 {
+            text-align: center;
+            color: aliceblue;
+        }
+        .audio-player,
+        .video-player,
+        .images {
+            margin: 20px 0;
+        }
+        img {
+            max-width: 70%;
+            height: auto;
+            display: block;
+            margin: 10px auto; /* Center images horizontally */
+        }
+        .back-button {
+            position: fixed; /* Position the button */
+            top: 20px; /* Distance from top */
+            right: 20px; /* Distance from right */
+            z-index: 999; /* Ensure it's above other content */
+        }
+        .image-link {
+            position: relative;
+            display: inline-block;
+            text-align: right; /* Ensure the text is aligned to the right */
+            width: 70%; /* Ensure the width matches the image width */
+            margin: 0 auto; /* Center the image-link container */
+        }
+        .hover-text {
+            display: none;
+            position: relative;
+            right: -5%; /* Position the text to the right of the image */
+            top: 4%; /* Align with the top edge of the image */
+            color: rgb(255, 255, 255); /* Set text color to white */
+            font-size: xx-small; /* Set smaller font size */
+            white-space: nowrap;
+        }
+        .image-link:hover .hover-text {
+            display: block;
+        }
+        .black-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            animation: fadeOut 20s forwards;
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        p {
+            font-size: x-small;
+        }
+        h2 {
+            font-size: x-small;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>djytb - hitch a ride to the end of the highway where the neons turn to wood</h1>
+        <p>This project was initially presented as part of an installation. Seeking to critically engage with Sound Art, while being more drawn to music as such, elements of these respective fields are deconstructed. It tries to merge comical and serious, to evoke laughs and nostalgic scenes at the same time. </p>
+
+        <div class="audio-player">
+            <h2></h2>
+            <audio controls>
+                <source src="1-intro.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="images">
+            <h2></h2>
+            <div class="image-link">
+                <div class="black-box"></div>
+                <img src="image-i.u.jpeg" alt="Description of Image 1">
+                <div class="hover-text">Cover art "hitch a ride to the end of the highway where the neons turn to wood"</div>
+            </div>
+            <div class="image-link">
+                <div class="black-box"></div>
+                <img src="IMG_2977.JPG" alt="Description of Image 2">
+                <div class="hover-text">Installation view at Eleven Steens Gallery, June 2023</div>
+            </div>
+            <div class="image-link">
+                <div class="black-box"></div>
+                <img src="IMG_3046.JPG" alt="Description of Image 3">
+                <div class="hover-text">Installation view at Eleven Steens Gallery, June 2023</div>
+            </div>
+            <div class="image-link">
+                <div class="black-box"></div>
+                <img src="IMG_2981.JPG" alt="Description of Image 4">
+                <div class="hover-text">Installation view at Eleven Steens Gallery, June 2023</div>
+            </div>
+            <div class="image-link">
+                <div class="black-box"></div>
+                <img src="IMG_3029.JPG" alt="Description of Image 5">
+                <div class="hover-text">Installation view at Eleven Steens Gallery, June 2023</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button to return to the main page -->
+    <div class="back-button">
+        <button onclick="window.location.href = 'home.html';">Back to Main Page</button>
+    </div>
+</body>
+</html>
